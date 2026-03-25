@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "lamyani-a34af"
+    "default": "sunnynest-eggs-store"
   },
   "targets": {
-    "lamyani-a34af": {
+    "sunnynest-eggs-store": {
       "hosting": {
         "main": [
-          "sunnynest-eggs"
+          "sunnynest-eggs-store"
         ]
       }
     }
