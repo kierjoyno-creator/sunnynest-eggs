@@ -1060,3 +1060,139 @@ body.cart-open {
     transform: translateY(0);
   }
 }
+
+main {
+  padding-bottom: 2rem;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+}
+
+.site-nav a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+
+.faq-section {
+  padding-top: 4.8rem;
+}
+
+.faq-grid,
+.footer-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.faq-item,
+.site-footer {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
+
+.faq-item {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.faq-item[open] {
+  background: rgba(255, 250, 240, 0.92);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1.2rem 1.35rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 1.35rem 1.35rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.site-footer {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto 2rem;
+  padding: 1.6rem;
+  border-radius: var(--radius-xl);
+}
+
+.footer-grid {
+  grid-template-columns: 1.15fr 0.85fr 0.85fr;
+  align-items: start;
+}
+
+.footer-brand-copy {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 36ch;
+}
+
+.footer-title {
+  margin: 0 0 0.9rem;
+  color: var(--brand-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.footer-links {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible,
+.text-link:hover,
+.text-link:focus-visible {
+  color: var(--ink);
+}
+
+@media (max-width: 1100px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .site-footer {
+    margin-bottom: 1rem;
+    padding: 1.3rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

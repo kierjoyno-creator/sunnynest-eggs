@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunnyNest Eggs | Shop</title>
+    <meta
+      name="description"
+      content="Shop SunnyNest Eggs by carton size, egg type, and kitchen need with a dedicated chicken egg storefront."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-orb orb-one"></div>
+    <div class="page-orb orb-two"></div>
+
+    <div class="top-banner">Shop fresh chicken eggs by carton, kitchen need, and route-ready delivery.</div>
+
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="SunnyNest Eggs home">
+        <span class="brand-mark">S</span>
+        <span class="brand-copy">
+          <strong>SunnyNest</strong>
+          <small>Eggs</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Chicken egg website navigation">
+        <a href="./index.html">Home</a>
+        <a href="./shop.html" aria-current="page">Shop</a>
+        <a href="./story.html">Farm Story</a>
+        <a href="./delivery.html">Delivery</a>
+        <a href="./faq.html">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="ghost-button" type="button" data-scroll-target="#products">Browse cartons</button>
+        <button class="cart-button" type="button" id="open-cart">
+          Egg Basket
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Shop chicken eggs</p>
+          <h1>Choose the carton that fits your kitchen this week.</h1>
+          <p class="hero-text">
+            This shop page is focused on the buying decision, with filterable chicken eggs,
+            clear carton sizes, and a basket that stays ready while the customer compares options.
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary-button" type="button" data-scroll-target="#products">
+              Shop all chicken eggs
+            </button>
+            <button class="secondary-button" type="button" data-add-product="farmhouse-dozen">
+              Add best-selling dozen
+            </button>
+          </div>
+
+          <div class="hero-proof">
+            <span>Easy filters</span>
+            <span>Fast add-to-basket</span>
+            <span>Firebase-backed order saving</span>
+          </div>
+
+          <div class="hero-stats">
+            <article>
+              <strong>Classic</strong>
+              <span>simple dozens for everyday breakfasts and meal prep</span>
+            </article>
+            <article>
+              <strong>Premium</strong>
+              <span>pasture-raised and organic cartons for richer weekly cooking</span>
+            </article>
+            <article>
+              <strong>Bulk</strong>
+              <span>larger trays for families, cafes, and bakeries</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="hero-card">
+            <p class="hero-card-label">Shop highlight</p>
+            <h2>Easy first order, clear next step.</h2>
+            <p class="hero-card-text">
+              The shop page keeps choice simple, price visible, and the basket one click away for
+              every carton.
+            </p>
+            <div class="hero-price-row">
+              <strong>6 packs</strong>
+              <span>from everyday cartons to bakery flats</span>
+            </div>
+            <button class="primary-button hero-card-button" type="button" data-add-product="pasture-18">
+              Add premium 18 pack
+            </button>
+
+            <div class="egg-cluster" aria-hidden="true">
+              <span class="hero-egg hero-egg-one"></span>
+              <span class="hero-egg hero-egg-two"></span>
+              <span class="hero-egg hero-egg-three"></span>
+              <span class="hero-egg hero-egg-four"></span>
+              <span class="hero-egg hero-egg-five"></span>
+            </div>
+          </article>
+
+          <article class="hero-note">
+            <p class="hero-note-label">Best for buyers who want</p>
+            <ul class="hero-note-list">
+              <li>one screen to compare carton sizes</li>
+              <li>simple filters without overwhelm</li>
+              <li>a faster path from browsing to basket</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="benefits section-shell" id="shop-by-need">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Shop by need</p>
+            <h2>Chicken eggs arranged around how people really buy.</h2>
+          </div>
+          <p class="section-note">
+            The sections below help families, premium home cooks, and bulk buyers find the right
+            pack without second guessing.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card reveal">
+            <span>01</span>
+            <h3>Everyday kitchens</h3>
+            <p>Classic dozens that feel familiar, affordable, and easy to reorder every week.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span>02</span>
+            <h3>Premium cooking</h3>
+            <p>Pasture-raised and organic chicken eggs for customers who want richer yolks and more care.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span>03</span>
+            <h3>High-volume kitchens</h3>
+            <p>Bulk trays that help bakeries, cafes, and large families buy more efficiently.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="products section-shell" id="products">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Shop chicken eggs</p>
+            <h2>Best-selling chicken egg cartons</h2>
+          </div>
+          <p class="section-note" id="product-summary">
+            Choose the chicken egg carton that fits your kitchen and add it in one click.
+          </p>
+        </div>
+
+        <div class="toolbar reveal" id="filter-toolbar" aria-label="Chicken egg filters">
+          <button class="filter-pill active" type="button" data-filter="all">All</button>
+          <button class="filter-pill" type="button" data-filter="classic">Classic</button>
+          <button class="filter-pill" type="button" data-filter="pasture">Pasture-Raised</button>
+          <button class="filter-pill" type="button" data-filter="organic">Organic</button>
+          <button class="filter-pill" type="button" data-filter="bulk">Bulk</button>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="steps section-shell" id="buying-flow">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Built for purchase momentum</p>
+            <h2>Every part of the shop page helps the buyer keep moving.</h2>
+          </div>
+          <p class="section-note">
+            The layout reduces hesitation by showing what the eggs are, who they fit, and how fast
+            they can be added.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span>1</span>
+            <h3>See the carton clearly</h3>
+            <p>Pack size, price, tag, and best-for note all sit together for quicker decisions.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>2</span>
+            <h3>Add without friction</h3>
+            <p>The basket updates instantly so shoppers feel progress as soon as they click.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>3</span>
+            <h3>Leave details once</h3>
+            <p>Customers can reserve their eggs without leaving the product flow or opening a new page.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="social-grid section-shell">
+        <article class="testimonial reveal">
+          <p class="eyebrow">Shop confidence</p>
+          <blockquote>
+            "I like that the shop page lets me compare carton sizes fast. It feels easier to buy
+            the right eggs the first time."
+          </blockquote>
+          <div class="testimonial-meta">
+            <strong>Angela Cruz</strong>
+            <span>Busy family cook</span>
+          </div>
+        </article>
+
+        <section class="newsletter reveal" id="newsletter">
+          <div>
+            <p class="eyebrow">Restock reminders</p>
+            <h2>Get notified when the next chicken egg packs are ready to reserve.</h2>
+            <p class="newsletter-copy">
+              This keeps weekly buyers connected to the next route without needing to keep checking
+              the shop page every day.
+            </p>
+          </div>
+          <form class="newsletter-form">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" type="email" placeholder="Enter your email for egg alerts" />
+            <button class="primary-button" type="submit">Join egg updates</button>
+          </form>
+          <p class="form-note" id="newsletter-note"></p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./index.html" aria-label="SunnyNest Eggs home">
+            <span class="brand-mark">S</span>
+            <span class="brand-copy">
+              <strong>SunnyNest</strong>
+              <small>Eggs</small>
+            </span>
+          </a>
+          <p class="footer-brand-copy">
+            Chicken egg shopping made cleaner, faster, and easier to trust from the first click to
+            the final basket.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">Pages</p>
+          <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./story.html">Farm Story</a>
+            <a href="./delivery.html">Delivery</a>
+            <a href="./faq.html">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Helpful Links</p>
+          <div class="footer-links">
+            <a href="#products">Browse cartons</a>
+            <a href="#newsletter">Join egg alerts</a>
+            <a href="./delivery.html">See delivery details</a>
+            <a href="./faq.html">Read buying answers</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Your eggs</p>
+          <h2 id="cart-title">Egg basket</h2>
+        </div>
+        <button class="icon-button" type="button" id="close-cart" aria-label="Close egg basket">
+          &times;
+        </button>
+      </div>
+
+      <div class="cart-body" id="cart-items"></div>
+
+      <div class="cart-footer">
+        <div class="cart-customer-form">
+          <label class="sr-only" for="customer-name">Name</label>
+          <input
+            class="cart-field"
+            id="customer-name"
+            type="text"
+            placeholder="Your name"
+            autocomplete="name"
+          />
+          <label class="sr-only" for="customer-email">Email</label>
+          <input
+            class="cart-field"
+            id="customer-email"
+            type="email"
+            placeholder="Your email for egg delivery"
+            autocomplete="email"
+          />
+        </div>
+        <div class="cart-total-row">
+          <span>Egg total</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+        <p class="cart-note" id="cart-note">Choose your chicken egg cartons and reserve a chilled drop.</p>
+        <button class="primary-button checkout-button" type="button" id="checkout-button">
+          Reserve these eggs
+        </button>
+      </div>
+    </aside>
+
+    <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
