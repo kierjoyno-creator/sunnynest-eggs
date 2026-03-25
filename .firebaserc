@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "lamyani-a34af"
+  },
+  "targets": {
+    "lamyani-a34af": {
+      "hosting": {
+        "main": [
+          "sunnynest-eggs"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

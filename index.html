@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunnyNest Eggs</title>
+    <meta
+      name="description"
+      content="SunnyNest Eggs lets customers buy farm-fresh chicken eggs online, from breakfast dozens to bakery trays, with chilled delivery and easy reordering."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-orb orb-one"></div>
+    <div class="page-orb orb-two"></div>
+
+    <div class="top-banner">Fresh chicken eggs packed daily from trusted local hens.</div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="SunnyNest Eggs home">
+        <span class="brand-mark">S</span>
+        <span class="brand-copy">
+          <strong>SunnyNest</strong>
+          <small>Eggs</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Chicken egg navigation">
+        <a href="#collections">Why Buy</a>
+        <a href="#products">Chicken Eggs</a>
+        <a href="#story">How It Works</a>
+        <a href="#newsletter">Egg Alerts</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="ghost-button" type="button" data-scroll-target="#products">
+          Shop now
+        </button>
+        <button class="cart-button" type="button" id="open-cart">
+          Egg Basket
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Fresh chicken eggs, made easy</p>
+          <h1>Fresh chicken eggs your kitchen will want every week.</h1>
+          <p class="hero-text">
+            SunnyNest Eggs brings together brown chicken eggs, pasture-raised chicken eggs, and
+            bulk egg trays for families, cafes, and bakers who want freshness, simple pricing, and
+            chicken eggs that arrive ready to use.
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary-button" type="button" data-scroll-target="#products">
+              Shop chicken eggs
+            </button>
+            <button class="secondary-button" type="button" data-add-product="farmhouse-dozen">
+              Add best-selling dozen
+            </button>
+          </div>
+
+          <div class="hero-proof">
+            <span>Grade A checked</span>
+            <span>Cold-packed delivery</span>
+            <span>Weekly restocks</span>
+          </div>
+
+          <div class="hero-stats">
+            <article>
+              <strong>24h</strong>
+              <span>from farm collection to cold pack</span>
+            </article>
+            <article>
+              <strong>4.9/5</strong>
+              <span>repeat buyer satisfaction</span>
+            </article>
+            <article>
+              <strong>12 to 60</strong>
+              <span>egg packs for every kind of buyer</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <article class="hero-card">
+            <p class="hero-card-label">Most-loved chicken eggs</p>
+            <h2>Farmhouse Brown Dozen</h2>
+            <p class="hero-card-text">
+              Clean shells, rich yolks, and the kind of chicken eggs customers reorder every week.
+            </p>
+            <div class="hero-price-row">
+              <strong>$6</strong>
+              <span>12 eggs</span>
+            </div>
+            <button class="primary-button hero-card-button" type="button" data-add-product="farmhouse-dozen">
+              Add this dozen
+            </button>
+
+            <div class="egg-cluster" aria-hidden="true">
+              <span class="hero-egg hero-egg-one"></span>
+              <span class="hero-egg hero-egg-two"></span>
+              <span class="hero-egg hero-egg-three"></span>
+              <span class="hero-egg hero-egg-four"></span>
+              <span class="hero-egg hero-egg-five"></span>
+            </div>
+          </article>
+
+          <article class="hero-note">
+            <p class="hero-note-label">Why customers buy</p>
+            <ul class="hero-note-list">
+              <li>Simple carton choices without confusion</li>
+              <li>Cold-packed chicken eggs that feel premium</li>
+              <li>Fast repeat ordering for busy households</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="trust-strip section-shell reveal" aria-label="Chicken egg trust points">
+        <article>
+          <strong>Laid Daily</strong>
+          <span>Fresh chicken eggs from trusted local hens</span>
+        </article>
+        <article>
+          <strong>Cold Packed</strong>
+          <span>Chicken eggs stay cool from farm pickup to drop-off</span>
+        </article>
+        <article>
+          <strong>Clear Pricing</strong>
+          <span>Simple carton pricing that buyers understand quickly</span>
+        </article>
+        <article>
+          <strong>Made For Reorders</strong>
+          <span>Easy to buy again when the kitchen needs another tray</span>
+        </article>
+      </section>
+
+      <section class="benefits section-shell" id="collections">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Why families reorder</p>
+            <h2>Chicken eggs chosen for freshness, value, and easy weekly buying.</h2>
+          </div>
+          <p class="section-note">
+            From everyday dozens to bakery trays, these chicken eggs are arranged to help every
+            kind of buyer find the right pack quickly.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card reveal">
+            <span>01</span>
+            <h3>Everyday dozens</h3>
+            <p>Classic chicken egg cartons for breakfasts, lunch prep, and everyday home cooking.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span>02</span>
+            <h3>Premium choices</h3>
+            <p>Pasture-raised and organic chicken eggs for buyers who want richer yolks and more care.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span>03</span>
+            <h3>Bulk value</h3>
+            <p>Larger chicken egg trays for bakeries, cafes, and homes that go through eggs fast.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="products section-shell" id="products">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Shop chicken eggs</p>
+            <h2>Best-selling chicken egg cartons</h2>
+          </div>
+          <p class="section-note" id="product-summary">
+            Choose the chicken egg carton that fits your kitchen and add it in one click.
+          </p>
+        </div>
+
+        <div class="toolbar reveal" id="filter-toolbar" aria-label="Chicken egg filters">
+          <button class="filter-pill active" type="button" data-filter="all">All</button>
+          <button class="filter-pill" type="button" data-filter="classic">Classic</button>
+          <button class="filter-pill" type="button" data-filter="pasture">Pasture-Raised</button>
+          <button class="filter-pill" type="button" data-filter="organic">Organic</button>
+          <button class="filter-pill" type="button" data-filter="bulk">Bulk</button>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="steps section-shell" id="story">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">How chicken egg buying works</p>
+            <h2>Three simple steps between choosing chicken eggs and a full egg basket.</h2>
+          </div>
+          <p class="section-note">
+            The flow stays easy to understand on both desktop and mobile so customers keep moving
+            toward purchase.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span>1</span>
+            <h3>Pick the carton</h3>
+            <p>Choose classic chicken eggs, organic chicken eggs, or a bulk tray for bigger kitchens.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>2</span>
+            <h3>Add eggs fast</h3>
+            <p>One click adds the carton to the egg basket so the customer feels momentum right away.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>3</span>
+            <h3>Reserve the drop</h3>
+            <p>The basket keeps totals visible and makes the next delivery step feel straightforward.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="social-grid section-shell">
+        <article class="testimonial reveal">
+          <p class="eyebrow">Buyer feedback</p>
+          <blockquote>
+            "The chicken eggs arrived cold, clean, and exactly the way I hoped. I ordered once,
+            then came back again the next week."
+          </blockquote>
+          <div class="testimonial-meta">
+            <strong>Mira Chen</strong>
+            <span>Neighborhood baker</span>
+          </div>
+        </article>
+
+        <section class="newsletter reveal" id="newsletter">
+          <div>
+            <p class="eyebrow">Egg alerts</p>
+            <h2>Get a message when fresh chicken eggs are packed for the next route.</h2>
+            <p class="newsletter-copy">
+              A simple reminder helps repeat buyers come back before they run out of chicken eggs.
+            </p>
+          </div>
+          <form class="newsletter-form">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" type="email" placeholder="Enter your email for egg alerts" />
+            <button class="primary-button" type="submit">Join egg updates</button>
+          </form>
+          <p class="form-note" id="newsletter-note"></p>
+        </section>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Your eggs</p>
+          <h2 id="cart-title">Egg basket</h2>
+        </div>
+        <button class="icon-button" type="button" id="close-cart" aria-label="Close egg basket">
+          &times;
+        </button>
+      </div>
+
+      <div class="cart-body" id="cart-items"></div>
+
+      <div class="cart-footer">
+        <div class="cart-customer-form">
+          <label class="sr-only" for="customer-name">Name</label>
+          <input
+            class="cart-field"
+            id="customer-name"
+            type="text"
+            placeholder="Your name"
+            autocomplete="name"
+          />
+          <label class="sr-only" for="customer-email">Email</label>
+          <input
+            class="cart-field"
+            id="customer-email"
+            type="email"
+            placeholder="Your email for egg delivery"
+            autocomplete="email"
+          />
+        </div>
+        <div class="cart-total-row">
+          <span>Egg total</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+        <p class="cart-note" id="cart-note">Choose your chicken egg cartons and reserve a chilled drop.</p>
+        <button class="primary-button checkout-button" type="button" id="checkout-button">
+          Reserve these eggs
+        </button>
+      </div>
+    </aside>
+
+    <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

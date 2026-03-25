@@ -1,0 +1,52 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /eggAlerts/{documentId} {
+      allow create: if request.resource.data.keys().hasOnly([
+        'email',
+        'source',
+        'createdAt'
+      ]) &&
+      request.resource.data.email is string &&
+      request.resource.data.email.size() > 4 &&
+      request.resource.data.email.size() <= 320 &&
+      request.resource.data.source == 'sunnynest-eggs-web';
+
+      allow read, update, delete: if false;
+    }
+
+    match /eggOrders/{documentId} {
+      allow create: if request.resource.data.keys().hasOnly([
+        'name',
+        'email',
+        'items',
+        'itemCount',
+        'subtotal',
+        'source',
+        'status',
+        'createdAt'
+      ]) &&
+      request.resource.data.name is string &&
+      request.resource.data.name.size() > 0 &&
+      request.resource.data.name.size() <= 100 &&
+      request.resource.data.email is string &&
+      request.resource.data.email.size() > 4 &&
+      request.resource.data.email.size() <= 320 &&
+      request.resource.data.items is list &&
+      request.resource.data.items.size() > 0 &&
+      request.resource.data.items.size() <= 20 &&
+      request.resource.data.itemCount is int &&
+      request.resource.data.itemCount > 0 &&
+      request.resource.data.subtotal is int &&
+      request.resource.data.subtotal >= 0 &&
+      request.resource.data.source == 'sunnynest-eggs-web' &&
+      request.resource.data.status == 'new';
+
+      allow read, update, delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
